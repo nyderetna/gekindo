@@ -3,6 +3,9 @@
 <?= $this->section('content'); ?>
 <div class="container">
 	<div class="row">
+		<div>
+			<h1><?= $h1; ?></h1>
+		</div>
 		<div class="row mt-4 mb-8">
 			<div class="col-md-6">
 				<div class="card" style="border-radius: 20px;">

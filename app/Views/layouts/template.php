@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
 
     <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <!-- <link href="navbar-top-fixed.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -47,6 +47,7 @@
                             <li><a class="dropdown-item" href="profil">Profil</a></li>
                             <li><a class="dropdown-item" href="rekening">Rekening</a></li>
                             <li><a class="dropdown-item" href="hubungi">Hubungi Kami</a></li>
+                            <li><a class="dropdown-item" href="galeri">Galeri</a></li>
                         </ul>
                     </li>
                 </ul>

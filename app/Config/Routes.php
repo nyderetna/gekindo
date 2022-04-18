@@ -38,6 +38,7 @@ $routes->get('/warta', 'Home::warta');
 $routes->get('/kebaktian', 'Home::kebaktian');
 $routes->get('/rekening', 'Home::rekening');
 $routes->get('/hubungi', 'Home::hubungi');
+$routes->get('/galeri', 'Home::galeri');
 
 /*
  * --------------------------------------------------------------------
