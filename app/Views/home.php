@@ -2,8 +2,8 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-	<div class="row mt-4">
-		<img src="assets/img/majelis.jpeg" class="img-fluid" style="border-radius: 20px;">
+	<div class="row mt-4" style="justify-content: center;">
+		<img src="assets/img/majelis.jpeg" class="img-fluid w-50" style="border-radius: 20px;">
 	</div>
 	<div class="row mt-4 mb-8">
 		<div class="col-md-6">
