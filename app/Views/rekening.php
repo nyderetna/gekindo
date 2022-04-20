@@ -1,7 +1,28 @@
 <?= $this->extend('layouts/template'); ?>
 
 <?= $this->section('content'); ?>
-<div>
-	<p style="background-color: gold;">REKENING NESA</p>
+<div class="container">
+	<div class="row">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Alamat</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <?= $this->endSection(); ?>
