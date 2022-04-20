@@ -11,3 +11,21 @@
     font-size: 3.5rem;
   }
 }
+
+.icon svg {
+  height: 1em;
+  width: 1em;
+}
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+}
+.svg-icon svg {
+  height: 1em;
+  width: 1em;
+}
+.svg-icon.svg-baseline svg {
+  top: 0.125em;
+  position: relative;
+}
