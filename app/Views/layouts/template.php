@@ -19,6 +19,9 @@
 
     <!-- Custom styles for this template -->
     <!-- <link href="navbar-top-fixed.css" rel="stylesheet"> -->
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -62,11 +65,28 @@
     <?= $this->renderSection('content'); ?>
 
     <footer class="text-muted py-5">
+        <hr>
         <div class="container">
             <p class="float-end mb-1">
-                <a href="#"><u><i>Kembali ke atas</u></i></a>
+                <a href="#">Kembali ke atas <i class="fa fa-arrow-turn-up"></i></a>
             </p>
             <p class="mb-1">Gereja Keesaan Injili Indonesia &copy; 2022. dibuat oleh <i>Tim GEKINDO PHP</i>.</p>
+        </div>
+        <div class="container text-center">
+            <!-- Facebook -->
+            <a class="btn btn-primary" style="background-color: #3b5998;" target="_blank" href="https://www.facebook.com/groups/gekindo/" role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-primary" style="background-color: #55acee;" target="_blank" href="https://twitter.com/gekindo" role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary" style="background-color: #c1558b;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+            <!-- Youtube -->
+            <a class="btn btn-primary" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+
+            <!-- Whatsapp -->
+            <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
 

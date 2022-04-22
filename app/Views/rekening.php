@@ -9,6 +9,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Alamat</h5>
 					<p class="card-text">Jl. Boulevard blok I2 no.9 dan 10, RT02/RW11 Kel. Pengasinan Kec. Rawalumbu - Kota Bekasi 17115</p>
+					<p class="card-text">Email : <a href="mailto:sekretariat.php@gekindo.or.id">sekretariat.php@gekindo.or.id</a></p>
 					<a href="https://goo.gl/maps/PTPSGE7Byg3qQ5E7A" target="_blank" class="">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.3 132.3" width="20px" height="20px">
 							<path fill="#1a73e8" d="M60.2 2.2C55.8.8 51 0 46.1 0 32 0 19.3 6.4 10.8 16.5l21.8 18.3L60.2 2.2z" />
@@ -17,14 +18,14 @@
 							<path fill="#fbbc04" d="M46.2 63.8c-9.8 0-17.7-7.9-17.7-17.7 0-4.3 1.5-8.3 4.1-11.3l-28 33.3c4.8 10.6 12.8 19.2 21 29.9l34.1-40.5c-3.3 3.9-8.1 6.3-13.5 6.3" />
 							<path fill="#34a853" d="M59.1 109.2c15.4-24.1 33.3-35 33.3-63 0-7.7-1.9-14.9-5.2-21.3L25.6 98c2.6 3.4 5.3 7.3 7.9 11.3 9.4 14.5 6.8 23.1 12.8 23.1s3.4-8.7 12.8-23.2" />
 						</svg>
-						<span>Google Maps</span></a>
+						<span>Cari kami di Google Maps</span></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-6">
 			<div class="card text-center">
 				<div class="card-body">
-					<h5 class="card-title">Rekening gereja</h5>
+					<h5 class="card-title mb-2">Rekening Gereja</h5>
 					<a href="#">
 						<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="57.393593mm" height="13.404968mm" viewBox="0 0 203.36312 47.497919" id="svg5261" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="Bank BTN logo.svg">
 							<defs id="defs5263">
@@ -94,6 +95,7 @@
 						</svg>
 
 					</a>
+					<hr>
 					<p class="card-text" style="text-align: center; font-size: 20px; font-weight: bold;">0014101500200150</p>
 					<p class="card-text" style="text-align: center;">Elliot NB Labonda</p>
 				</div>
