@@ -3,10 +3,6 @@
 <?= $this->section('content'); ?>
 <div class="container">
 
-	<div class="container-fluid p-5 bg-light text-black text-center">
-		<h1>Setia, Jujur dan Taat</h1>
-		<p style="font-size: 9pt;">motto GEKINDO PHP</p>
-	</div>
 
 	<div class="container mt-5">
 		<div class="row">

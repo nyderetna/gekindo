@@ -15,7 +15,7 @@
 								<span class="prev"></span>
 							</div>
 						</div>
-						<article class="post-15 page type-page status-publish entry" aria-label="Sejarah" itemscope itemtype="https://schema.org/CreativeWork">
+						<article class="post-15 page type-page status-publish entry" aria-label="Sejarah">
 							<header class="entry-header">
 								<h1><?= $h1; ?></h1>
 							</header>

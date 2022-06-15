@@ -34,11 +34,14 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/sejarah', 'Home::sejarah');
 $routes->get('/profil', 'Home::profil');
+$routes->get('/profil/(:segment)', 'Home::detail/$1');
 $routes->get('/warta', 'Home::warta');
 $routes->get('/kebaktian', 'Home::kebaktian');
 $routes->get('/rekening', 'Home::rekening');
 $routes->get('/hubungi', 'Home::hubungi');
 $routes->get('/galeri', 'Home::galeri');
+$routes->get('/visimisi', 'Home::visimisi');
+$routes->get('/adart', 'Home::adart');
 
 /*
  * --------------------------------------------------------------------

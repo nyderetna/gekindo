@@ -2,8 +2,18 @@
 
 namespace App\Controllers;
 
+use App\Controllers\BaseController;
+use App\Models\PelayanModel;
+
 class Home extends BaseController
 {
+    protected $PelayanModel;
+
+    public function __construct()
+    {
+        $this->PelayanModel = new PelayanModel();
+    }
+
     public function index()
     {
         $data = [
@@ -26,12 +36,20 @@ class Home extends BaseController
 
     public function profil()
     {
+
+        $pelayan = $this->PelayanModel->findAll();
         $data = [
             'title' => 'GEKINDO PHP | Profil',
-            'h1' => 'Profil'
+            'h1' => 'Profil Pelayan',
+            'pelayan' => $pelayan
         ];
 
         return view('profil', $data);
+    }
+
+    public function detail($slug)
+    {
+        echo $slug;
     }
 
     public function warta()
@@ -83,6 +101,28 @@ class Home extends BaseController
         ];
 
         return view('galeri', $data);
+    }
+
+    public function visimisi()
+    {
+        $data = [
+            'title' => 'GEKINDO PHP | Visi & Misi',
+            'h1' => 'Visi & Misi, Moto, dan Identitas Gereja'
+
+        ];
+
+        return view('visimisi', $data);
+    }
+
+    public function adart()
+    {
+        $data = [
+            'title' => 'GEKINDO PHP | AD & ART Gereja',
+            'h1' => 'AD & ART Gereja'
+
+        ];
+
+        return view('adart', $data);
     }
 }
 

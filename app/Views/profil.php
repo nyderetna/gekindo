@@ -3,45 +3,26 @@
 <?= $this->section('content'); ?>
 <div class="container">
 	<div class="row mt-2">
-		<div class="col-sm-3">
-			<div class="card">
-				<img src="assets/img/majelis.jpeg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Special title treatment</h5>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+		<header class="entry-header">
+			<h1><?= $h1; ?></h1>
+		</header>
+		<div class="col-12">
+			<?php foreach ($pelayan as $p) : ?>
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="assets/img/pelayan/<?= $p['img']; ?>" class="img-fluid rounded-start" alt="pelayan">
+						</div>
+						<div class="col-md-8 my-5">
+							<div class="card-body">
+								<h5 class="card-title"><?= $p['singkatan_jabatan']; ?> <?= $p['nama_pelayan']; ?></h5>
+								<p class="card-text"><strong>(kalimat motivasi/inspirasi/kutipan ayat alkitab mengenai pelayanan)</strong></p>
+								<p class="card-text"><small class="text-muted"><?= $p['jabatan_pelayan']; ?></small></p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-				<img src="assets/img/majelis.jpeg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Special title treatment</h5>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-				<img src="assets/img/majelis.jpeg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Special title treatment</h5>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card">
-				<img src="assets/img/majelis.jpeg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Special title treatment</h5>
-					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 </div>
