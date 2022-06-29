@@ -16,8 +16,8 @@
 						<div class="col-md-8 my-5">
 							<div class="card-body">
 								<h5 class="card-title"><?= $p['singkatan_jabatan']; ?> <?= $p['nama_pelayan']; ?></h5>
-								<p class="card-text"><strong>(kalimat motivasi/inspirasi/kutipan ayat alkitab mengenai pelayanan)</strong></p>
 								<p class="card-text"><small class="text-muted"><?= $p['jabatan_pelayan']; ?></small></p>
+								<p class="card-text"><i><strong><?= $p['intro']; ?></strong></i></p>
 							</div>
 						</div>
 					</div>

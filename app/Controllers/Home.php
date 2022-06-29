@@ -4,21 +4,26 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\PelayanModel;
+use App\Models\WartaModel;
 
 class Home extends BaseController
 {
     protected $PelayanModel;
+    protected $WartaModel;
 
     public function __construct()
     {
         $this->PelayanModel = new PelayanModel();
+        $this->WartaModel = new WartaModel();
     }
 
     public function index()
     {
+        $warta = $this->WartaModel->findAll();
         $data = [
             'title' => 'GEKINDO PHP | Beranda',
-            'h1' => 'Beranda'
+            'h1' => 'Beranda',
+            'warta' => $warta
         ];
 
         return view('home', $data);
