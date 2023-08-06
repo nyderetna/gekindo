@@ -19,11 +19,9 @@ class Home extends BaseController
 
     public function index()
     {
-        $warta = $this->WartaModel->findAll();
         $data = [
             'title' => 'GEKINDO PHP | Beranda',
             'h1' => 'Beranda',
-            'warta' => $warta
         ];
 
         return view('home', $data);
@@ -59,9 +57,11 @@ class Home extends BaseController
 
     public function warta()
     {
+        $warta = $this->WartaModel->findAll();
         $data = [
             'title' => 'GEKINDO PHP | Warta Mingguan',
-            'h1' => 'Warta Mingguan'
+            'h1' => 'Warta Mingguan',
+            'warta' => $warta
         ];
 
         return view('warta', $data);
@@ -129,7 +129,13 @@ class Home extends BaseController
 
         return view('adart', $data);
     }
+
+    public function get_content($selectedDate)
+    {
+        // You can adjust this query based on your database structure and the selected date
+        $content = $this->WartaModel->getContentByDate($selectedDate);
+
+        return $this->response->setJSON($content);
+    }
 }
-
-
 // $routes->get('/rekening', 'Home::rekening');

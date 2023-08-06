@@ -1,101 +1,120 @@
 <?= $this->extend('layouts/template'); ?>
 
 <?= $this->section('content'); ?>
+<!-- <div class="container">
+	<?php foreach ($warta as $w) : ?>
+
+
+		<div class="card">
+
+			<div class="card-header">
+				<?php
+				// Define the Indonesian locale
+				$locale = 'id_ID';
+
+				// Create an instance of IntlDateFormatter
+				$dateFormatter = new IntlDateFormatter($locale, IntlDateFormatter::FULL, IntlDateFormatter::NONE, 'Asia/Jakarta', IntlDateFormatter::GREGORIAN, 'EEEE, d MMMM yyyy');
+
+				// Format and display the date in Indonesian language
+				$dateInIndonesian = $dateFormatter->format(strtotime($w['tgl_warta']));
+				?>
+
+				<span style="font-size: 1.2em; font-weight: bold;">
+					<?= $dateInIndonesian; ?>
+				</span>
+				<i class="fa-solid fa-book-bible"></i> <?= $w['tema_warta']; ?>
+			</div>
+			<div class="card-body">
+				<blockquote class="blockquote mb-0">
+					<header class="blockquote-header"><cite title="Source Title"><?= $w['ayat_warta']; ?></cite></header>
+					<p><?= $w['isi_warta']; ?></p>
+				</blockquote>
+			</div>
+		</div>
+	<?php endforeach; ?>
+</div> -->
+
 <div class="container">
-	<div class="row">
-		<div>
-			<h1><?= $h1; ?></h1>
-		</div>
-		<div class="row mt-4 mb-8">
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Hikmat dari Tuhan
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>17 April 2022</i></p>
-							<p>"Karena Tuhanlah yang memberikan hikmat, dari mulut-Nya datang pengetahuan dan kepandaian."</p>
-							<footer class="blockquote-footer"><cite title="Source Title">Amsal 2:6</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Penghiburan atas kematian
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>24 April 2022</i></p>
-							<p>"Sebab tidak ada seorang pun di antara kita yang hidup untuk dirinya sendiri, dan tidak ada seorangpun yang mati untuk dirinya sendiri. Sebab jika kita hidup, kita hidup untuk Tuhan, dan jika kita mati, kita mati untuk Tuhan. Jadi, baik hidup atau mati, kita adalah milik Tuhan. Sebab itulah Kristus telah mati dan hidup kembali, supaya Ia menjadi Tuhan, baik atas orang – orang mati, maupun atas orang – orang hidup."</p>
-							<footer class="blockquote-footer"><cite title="Source Title">Roma 14: 7-9</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-4 mb-8">
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Hari Penghakiman
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>1 Mei 2022</i></p>
-							<p>"Karena Dia datang, karena Dia datang untuk menghakimi bumi: Dia akan menghakimi dunia dengan keadilan, dan bangsa-bangsa dengan kebenaran-Nya."</p>
-							<footer class="blockquote-footer"><cite title="Source Title">Mazmur 96:13</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Berkat
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>8 Mei 2022</i></p>
-							<p>“TUHAN memberkati engkau dan melindungi engkau; TUHAN menyinari engkau dengan wajah-Nya dan memberi engkau kasih karunia; TUHAN menghadapkan wajah-Nya kepadamu dan memberi engkau damai sejahtera.”</p>
-							<footer class="blockquote-footer"><cite title="Source Title">Bilangan 6:24-26</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row mt-4 mb-8">
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Quote
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>15 Mei 2022</i></p>
-							<p>A well-known quote, contained in a blockquote element.</p>
-							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="card" style="border-radius: 20px;">
-					<div class="card-header">
-						Quote1
-					</div>
-					<div class="card-body">
-						<blockquote class="blockquote mb-0">
-							<p style="font-size: 10px;"><i>22 Mei 2022</i></p>
-							<p>A well-known quote, contained in a blockquote element.</p>
-							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- Add the dropdown for date selection -->
+	<select id="selectDate" class="form-select mb-3" aria-label="Pilih Tanggal Renungan">
+		<option value="" selected disabled>Pilih Tanggal Renungan</option>
+		<?php foreach ($warta as $w) : ?>
+			<?php
+			// Define the Indonesian locale
+			$locale = 'id_ID';
+
+			// Create an instance of IntlDateFormatter with day name
+			$dateFormatter = new IntlDateFormatter($locale, IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+
+			// Format and display the date in Indonesian language
+			$dateInIndonesian = $dateFormatter->format(strtotime($w['tgl_warta']));
+			?>
+			<option value="<?= $dateInIndonesian; ?>"><?= $dateInIndonesian; ?></option>
+		<?php endforeach; ?>
+	</select>
+
+	<!-- Container to hold the accordion -->
+	<div id="accordionContainer"></div>
 </div>
+<script>
+	// Event listener for date selection
+	document.getElementById('selectDate').addEventListener('change', function() {
+		const selectedDate = this.value;
+
+		// Clear previous content
+		document.getElementById('accordionContainer').innerHTML = '';
+
+		// Fetch and populate accordion content if a date is selected
+		if (selectedDate) {
+			fetchAccordionContent(selectedDate);
+		}
+	});
+
+	// Function to fetch accordion content and populate the accordion
+	function fetchAccordionContent(date) {
+		// You need to adjust the URL based on your actual route for fetching content
+		fetch(`/warta/get_content/${date}`)
+			.then(response => response.json())
+			.then(data => {
+				const accordionContainer = document.getElementById('accordionContainer');
+				data.forEach(item => {
+					const accordionItem = createAccordionItem(item);
+					accordionContainer.appendChild(accordionItem);
+				});
+			})
+			.catch(error => {
+				console.error('Error fetching accordion content:', error);
+			});
+	}
+
+	// Function to create an accordion item
+	function createAccordionItem(item) {
+		const accordionItem = document.createElement('div');
+		accordionItem.className = 'accordion-item';
+
+		const accordionHeader = document.createElement('h2');
+		accordionHeader.className = 'accordion-header';
+		accordionHeader.innerHTML = `
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${item.id_warta}">
+                ${item.tema_warta}
+            </button>
+        `;
+
+		const accordionCollapse = document.createElement('div');
+		accordionCollapse.id = `collapse-${item.id_warta}`;
+		accordionCollapse.className = 'accordion-collapse collapse';
+		accordionCollapse.innerHTML = `
+            <div class="accordion-body">
+                ${item.isi_warta}
+            </div>
+        `;
+
+		accordionItem.appendChild(accordionHeader);
+		accordionItem.appendChild(accordionCollapse);
+
+		return accordionItem;
+	}
+</script>
+
+
 <?= $this->endSection(); ?>

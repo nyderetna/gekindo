@@ -10,8 +10,8 @@
         <div class="col-6 d-inline-flex col-md-6 col-form-label text-right">
             <label for="adart">Cari Bab/Pasal:</label>
             <select class="form-select" aria-label="" id="select_adart">
-                <option value="" selected disabled>-- Klik dan Pilih --</option>
-                <optgroup style="text-align: center; font-size:14pt;" label="---------- Anggaran Dasar (AD) ----------">
+                <option value="" selected disabled>-- Pilih --</option>
+                <optgroup style="text-align: center; font-size:14pt;" label="Anggaran Dasar (AD)">
                 <optgroup label="BAB I - NAMA,AZAS,WAKTU BERDIRI, TUGAS, FUNGSI DAN WILAYAH KEBERADAAN">
                     <option value="#adp1">Pasal 1 - Nama</option>
                     <option value="#adp2">Pasal 2 - Azas</option>
@@ -64,7 +64,7 @@
                     <option value="#adp23">Pasal 23 - Waktu Pemberlakuan Anggaran Dasar</option>
                     <option value="#adp24">Pasal 24 - Ketentuan Lebih Lanjut</option>
                 </optgroup>
-                <optgroup style="text-align: center; font-size:14pt;" label="---------- Anggaran Rumah Tangga (ART) -----------">
+                <optgroup style="text-align: center; font-size:14pt;" label="Anggaran Rumah Tangga (ART)">
                 <optgroup label="BAB I - NAMA, WAKTU BERDIRI DAN WILAYAH KEBERADAAN">
                     <option value="#artp1">Pasal 1 - Nama</option>
                     <option value="#artp2">Pasal 2 - Waktu</option>
